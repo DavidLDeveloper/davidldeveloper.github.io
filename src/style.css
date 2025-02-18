@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer components {
+  .navButton {
+    /* text-decoration: underline; */
+    @apply border-2 p-2 inline-block w-full text-center;
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      @apply bg-white text-black rounded-none border-white;
+    }
+  }
+  .button {
+    /* text-decoration: underline; */
+    @apply border-2 p-2 inline-block text-center;
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      @apply bg-white text-black rounded-none border-white;
+    }
+  }
+
+  .heading {
+    @apply text-3xl font-bold;
+  }
+  .skill {
+    @apply border-2 rounded-2xl min-w-[70px] text-center ml-1 mr-1 mt-1 pr-1.5 pl-1.5;
+  }
+}
+
+a {
+  &:not(.button) {
+    @apply underline underline-offset-4;
+    &:hover {
+      @apply no-underline;
+    }
+  }
+}
+
+h3 {
+  @apply font-bold text-xl underline pt-2.5 pb-2;
+}
+
+section {
+  @apply m-3;
+}
